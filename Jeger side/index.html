@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Jakt</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #2e4435;
+      color: #f5f5f5;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 10px;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+    
+
+    /* ====== FULLSKJERMS BILDESEKSJONER ====== */
+    .scroll-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+      will-change: opacity;
+    }
+
+    .scroll-section.visible {
+      opacity: 1;
+    }
+
+    /* Tekst med skygge */
+    .scroll-text {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  text-align: center;
+}
+
+.scroll-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-text p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+}
+
+    /* ====== VANLIG ARTIKKEL UNDER ====== */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .placeholder-img {
+      width: 100%;
+      height: 400px;
+      background-color: #2b2b2b;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 1.2em;
+      border-radius: 8px;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 4px solid #555;
+      color: #ddd;
+      font-style: italic;
+    }
+
+    ul {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    footer {
+      margin: 60px auto 40px;
+      max-width: 800px;
+      border-top: 1px solid #333;
+      padding-top: 10px;
+      color: #999;
+      font-size: 0.9em;
+    }
+
+    .container {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    .container img {
+      width: 100%;
+      height: 500px;
+      display: block;
+      margin: 40px auto;
+    }
+
+    
+    
+  
+    
+
+  </style>
+</head>
+<body>
+
+
+<!-- 1. fullskjerms bilde-seksjon -->
+<section class="scroll-section">
+  <img src="nærbilde.jpg" alt="" 
+       style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:-1;">
+  <div class="scroll-text">
+    <p>Med et rolig åndedrag, holder han pusten inne</p>
+    <p>Dyret er i siktet</p>
+  </div>
+</section>
+
+<!-- 2. fullskjerms bilde-seksjon -->
+<section class="scroll-section" >
+<img src="nærvåpen.jpg" alt="" 
+style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:-1;">
+  <div class="scroll-text">
+    <p>pust ut veldig rolig</p>
+  </div>
+</section>
+
+<section class="scroll-section" >
+  <img src="sikt.jpg" alt="" 
+  style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:-1;">
+    <div class="scroll-text">
+      <p>Og skyt!</p>
+    </div>
+  </section>
+
+
+<!-- Resten av artikkelen -->
+<main>
+  <p>Dette er Hans Martin. Han har drevet med jakt siden han var 18. Nå er han 23, og synes det er mer enn bare en hobby. Han gjør ikke dette bare fordi, men det er mer bak. Blodet strømmer gjennom hele kroppen, og man kjenner adrenalinet pumpe.</p>
+  <p>Hadde du sett han i andre klær, eller i en annen setting hadde du kanskje ikke sett for deg at han var jeger. Mange ser for seg en jeger som en som er høy, skummel og liker å drepe dyr. Hvordan er det egentlig for Hans Martin?</p>
+  <p>Vi ble med på jakt for å oppleve hvordan det foregår.</p>
+
+  <div class="container">
+    <img src="skog.jpg" alt="">
+  </div>
+
+  <p>Klokka er 06.00, da var det opp og kle på seg ull, jakke og gode sko. Det er lyst ute, for sola har stått opp for ca. En halvtime siden. Vi kjører til stedet, vi skal begynne jakten, og parkerer litt utenfor skogen. Det er vindstille og rolig ute. Ikke en lyd å høre, kun litt fuglekvitter i det fjerne.</p>
+  <p>Vi begynner ferden igjennom skogen, og stopper opp litt ved et jorde vi kom til.</p>
+    <p>“Hvis vi er helt stille nå, vil vi kanskje se noen duer”, sier han.</p>
+    <p>Man føler at man ikke kunne puste engang nesten. </p>
+
+
+
+  <div class="container">
+    <img src="skog 2.jpg" alt="">
+  </div>
+
+  <p>Vi fortsetter inn i skogen og har oppmerksomheten fullt på å følge med rundt oss, for plutselig kan det komme noe. 
+    Vi har kommet et stykke nå, så vi setter oss ned og venter. Det er for det meste skog rundt oss, men foran oss er det noe høyt gress med noen høye trær, så vi får en slags oversikt over et område om det skulle fly noen duer forbi.</p>
+    <p>Det er flere ganger vi ser duer, men de var for langt unna til å ta et skudd.</p>
+  
+
+  <div class="container">
+    <img src="ekorn.jpg" alt="">
+  </div>
+
+  <p>Det som er med jakt er at det kan skje så mye forskjellig, så det handler mer om hele opplevelsen. Èn jakttur kan være at det ikke skjer så mye, og da er det været, roen i skogen, samværet, små dyr man møter som ekorn, godsaker man har tatt med osv. som blir turen. Andre ganger kan det være at man kommer helt tett innpå dyr, og da blir det skikkelig spennende.</p>
+    <h2>"Jeg kan bli litt skremt når jeg møter store dyr veldig brått."</h2>
+   <p>Når man går rolig rundt i skogen og spaner etter dyr, og plutselig kommer det et dyr på skuddhold, da pumper hjertet.</p>
+
+
+   <p>Vi bestemmer oss for å gå litt videre og kommer til et flott naturlandskap med litt småskog her og der, store gressletter, og en stor innsjø, der dyrelivet er rikt. Det er mest småfugler som kvitret og fløy rundt, men vi får også øye på noen ender i vannkanten.</p>
+
+
+   <video width="830" height="360" controls>
+    <source src="video av and.mov" type="video/mp4" />
+    <source src="video av and.mov" type="video/webm" />
+    Your browser does not support the video tag
+    </video>
+
+    <p>Hans Martin tar et skremmeskudd for å forhåpentligvis få endene til å fly litt nærmere, og det fungerer. Han sikter mot de flyvende endene og tar et skudd til. Han treffer. Det er en utrolig merkelig og spennende følelse. Han har nettopp skutt en and. </p>
+
+    <div class="container">
+      <img src="And.JPG" alt="">
+    </div>
+
+    <p>Jakt er en opplevelse.
+      Det at man kan være sosial, får være ute i skogen, og spesielt når man møter dyr får man veldig adrenalin, forteller Hans Martin. Han mener at det egentlig ikke har så mye å si hvor tøff og sterk man er, for det handler i bunn og grunn om interesse.</p>
+
+      <h2>“I utgangspunktet trenger man ikke være glad i blod og sånn, det er ikke jeg.”</h2>
+
+    <p>Jakt er ikke bare å felle dyr.  På jakt må man ha det tankesettet at dyr er mat, det er ikke det samme som et kjæledyr, eller gårdsdyr f.eks. En annen hendelse kan være at et dyr er skadet, og da kan man hjelpe det, ved å ta det. Det er med andre ord ikke bare for egen glede, men det er så mye som kan utspille seg og være en del av saken.</p>
+
+    <div class="container">
+      <img src="måltid.jpg" alt=""> 
+    </div>
+
+    <p>Vi pakker sakene, og drar hjem til Hans Martin for å lage et fint måltid ut av anda.Smaken av vilt kjøtt med poteter og tilbehør er en fin avslutning på denne turen. 
+      Vi spurte om det var noe han ønsket at flere folk visste om jakt, dette var svaret hans:</p>
+      <h2>“Jakt for meg er ikke bare en hobby, men en måte jeg får være i naturen, tenne bål, drikke kaffe og få mange gode opplevelser.”</h2>
+
+      <div class="container">
+        <img src="kaffe.jpg" alt=""> 
+      </div>
+
+      <p>Vi har nå sett hva jakt er for Hans Martin og at den stereotypiske jegeren ikke er like ekte som mange tror. Jakt er mer enn bare blod.</p>
+</main>
+
+
+<script>
+  const scrollSections = document.querySelectorAll('.scroll-section');
+
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const section = entry.target;
+      const text = section.querySelector('.scroll-text');
+
+      // Når minst 30% av seksjonen er synlig
+      if (entry.intersectionRatio > 0.3) {
+        section.classList.add('visible');
+        text.classList.add('visible');
+      } else {
+        section.classList.remove('visible');
+        text.classList.remove('visible');
+      }
+    });
+  }, { threshold: [0, 0.3, 0.6, 1] });
+
+  // Observer alle seksjoner (inkl. første)
+  scrollSections.forEach(section => sectionObserver.observe(section));
+
+  // Sørg for at første seksjon vises ved lasting (fade inn)
+  window.addEventListener('load', () => {
+    scrollSections[0].classList.add('visible');
+    scrollSections[0].querySelector('.scroll-text').classList.add('visible');
+  });
+</script>
+
+</body>
+</html>
